@@ -52,7 +52,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin: 5em 0;
     padding: 0;
 }
 .btn {
@@ -448,20 +448,20 @@ hr {
     margin: 30px auto;
     padding: 0;
 }
-.process li {
+.process > li {
     display: block;
     float: left;
     padding: 1px;
     width: 100%;
     opacity: 0;
 }
-.process li.shown, .no-js .process li, .no-cssanimations .process li {
+.process > li.shown, .no-js .process > li, .no-cssanimations .process > li {
     opacity: 1;
 }
-.process li a, .process li img {
+.process > li a, .process > li img {
     outline: 0;
     border: 0;
-    display: block;
+    display: inline-block;
     max-width: 100%}
 .process.effect-2 li.animate {
     -webkit-transform: translateY(200px);
@@ -556,18 +556,38 @@ hr {
     opacity: 1;
 }
 }
-h1 {
 
+.portfolio-img-container {
+    height:500px;
+    line-height:500px;
+    text-align:center;
+/*    border: 1px solid red;*/
 }
 
-h1 {
-
+.portfolio-img-container img {
+    vertical-align: middle;
+    max-height: 500px;
 }
 
-h1 {
-
+.portfolio-item-container {
+    height: 500px;
+    line-height: 500px;
+/*    border: 1px solid red;*/
 }
 
-h1 {
-
+.portfolio-item-inner {
+    background-color: #fff;
+    padding: 40px;
+    text-align: left;
+    margin: 30px 0;
+    height: 440px;
+    width: 100%;
+    line-height: normal;
 }
+
+.portfolio-item-inner h2 {
+    margin: 0 0 .3em 0;
+    font-weight: 500;
+}
+
+
