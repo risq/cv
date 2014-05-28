@@ -1,0 +1,36 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "cv en ligne",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/risq/cv.git"
+  },
+  "author": "risq (valentin ledrapier)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/risq/cv/issues"
+  },
+  "homepage": "https://github.com/risq/cv",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-bower-files": "^0.2.4",
+    "gulp-bower-src": "0.0.1",
+    "gulp-clean": "^0.3.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-csso": "^0.2.8",
+    "gulp-debug": "^0.3.0",
+    "gulp-filter": "^0.4.1",
+    "gulp-myth": "^0.3.1",
+    "gulp-plumber": "^0.6.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.0",
+    "gulp-util": "^2.2.14",
+    "minimist": "^0.1.0",
+    "wiredep": "^1.7.1"
+  }
+}
