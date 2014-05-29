@@ -21,13 +21,20 @@ var src = {
 
 var publishdir = 'dist'
 var dist = {
-    all: [publishdir + '/**/*'],
-    css: publishdir + '/assets/css',
-    js: publishdir + '/assets/js',
-    img: publishdir + '/assets/img',
-    fonts: publishdir + '/assets/fonts',
-    vendor: publishdir + '/assets',
-    modernizr: publishdir + 'modernizr_custom'
+    all:       [publishdir + '/**/*'],
+    css:        publishdir + '/assets/css',
+    js:         publishdir + '/assets/js',
+    img:        publishdir + '/assets/img',
+    fonts:      publishdir + '/assets/fonts',
+    vendor:     publishdir + '/assets',
+    modernizr:  publishdir + 'modernizr_custom'
+}
+
+var sourcesdir = 'src'
+var sources = {
+    css:    sourcesdir + '/assets/css',
+    js:     sourcesdir + '/assets/js',
+    fonts:  sourcesdir + '/assets/fonts'
 }
 
 
@@ -46,10 +53,12 @@ gulp.task('bower-build', function () {
         .pipe(jsFilter)
         .pipe(concat('libs.js'))
         .pipe(gulp.dest(dist.js))
+        .pipe(gulp.dest(sources.js))
         .pipe(jsFilter.restore())
         .pipe(cssFilter)
         .pipe(concat('libs.css'))
         .pipe(gulp.dest(dist.css))
+        .pipe(gulp.dest(sources.css))
         .pipe(cssFilter.restore())
         .pipe(fontsFilter)
         .pipe(rename(function (path) {
@@ -58,6 +67,7 @@ gulp.task('bower-build', function () {
             }
         }))
         .pipe(gulp.dest(dist.fonts))
+        .pipe(gulp.dest(sources.fonts))
 })
 
 gulp.task("html", function () {
