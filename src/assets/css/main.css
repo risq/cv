@@ -30,6 +30,11 @@ body {
 .navbar.navbar-fixed-top.headroom--pinned {
     top: 0;
 }
+@media (max-width: 768px) {
+    .navbar.navbar-fixed-top.headroom--unpinned {
+        top: 0;
+    }
+}
 h1,
 h2,
 h3,
@@ -113,7 +118,7 @@ hr {
     line-height: 20px;
 }
 #headerwrap {
-    background: url(../img/header-bg1.jpg) no-repeat center top;
+    background: url(../img/bg.png) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
@@ -480,18 +485,18 @@ hr {
     }
 }
 .portfolio-img-container {
-    height: 500px;
-    line-height: 500px;
+    height: 525px;
+    line-height: 525px;
     text-align: center;
     /*    border: 1px solid red;*/
 }
 .portfolio-img-container img {
     vertical-align: middle;
-    max-height: 500px;
+    max-height: 525px;
 }
 .portfolio-item-container {
-    height: 500px;
-    line-height: 500px;
+    height: 525px;
+    line-height: 525px;
     /*    border: 1px solid red;*/
 }
 .portfolio-item-inner {
@@ -499,7 +504,7 @@ hr {
     padding: 40px;
     text-align: left;
     margin: 30px 0;
-    height: 440px;
+    height: 465px;
     width: 100%;
     line-height: normal;
     font-size: 14px;
@@ -524,6 +529,11 @@ hr {
     text-align: right;
     margin: 0;
 }
+@media (max-width: 768px) {
+    .exp-year {
+        text-align: left;
+    }
+}
 #headerwrap h1 {
     text-transform: uppercase
 }
@@ -535,4 +545,13 @@ hr {
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
+}
+#cf .bold-title {
+    color: #fff;
+    margin-top: 40px;
+}
+#cf .fa-ul {
+    color: #fff;
+    margin-bottom: 80px;
+    font-weight: 700;
 }

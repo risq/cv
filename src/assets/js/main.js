@@ -1,4 +1,14 @@
 ;(function(){
+    NProgress.start();
+    var imgLoad = imagesLoaded( 'img' );
+    imgLoad.on( 'always', function( instance ) {
+        NProgress.done();
+        console.log("all images loaded")
+    });
+    imgLoad.on( 'progress', function( instance, image ) {
+        NProgress.inc(0.1);
+        console.log("one image loaded")
+    });
 
     $('.navbar').headroom({
         "tolerance": 20,
@@ -28,5 +38,7 @@
             }
         }
     });
+
+    $("#email").append('<a href="mailto:' + 'valentin.ledrapier' + '@' + 'gmail.com' + '">valentin.ledrapier' + '@' + 'gmail.com' + '</a>');
 
 })(jQuery)

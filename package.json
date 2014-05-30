@@ -33,7 +33,8 @@
     "minimist": "^0.1.0",
     "wiredep": "^1.7.1",
     "gulp-useref": "^0.4.3",
-    "run-sequence": "^0.3.6"
+    "run-sequence": "^0.3.6",
+    "gulp-imagemin": "^0.5.1"
   },
   "dependencies": {
     "gulp-open": "^0.2.8"

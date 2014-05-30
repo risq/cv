@@ -11,7 +11,8 @@ var gulp        = require("gulp"),
     rename      = require('gulp-rename'),
     useref      = require('gulp-useref'),
     runSequence = require('run-sequence'),
-    open        = require("gulp-open");
+    open        = require("gulp-open"),
+    imagemin    = require('gulp-imagemin');
 
 var src = {
     css: ['assets/**/*.css'],
@@ -94,7 +95,12 @@ gulp.task("js", function () {
 })
 
 gulp.task("img", function () {
+    var imgFilter = gulpFilter('!**/*.psd')
     return gulp.src("./src/assets/img/**/*")
+        .pipe(imgFilter)
+//        .pipe(imagemin({
+//            progressive: true,
+//        }))
         .pipe(gulp.dest(dist.img))
 })
 

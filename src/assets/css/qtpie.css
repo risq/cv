@@ -72,8 +72,12 @@ path:hover {
     fill: #6861e5;
 }
 
-/* qtpie-frontend ------------------------------------- */
 
+
+
+.pie-container {
+    padding-bottom: 50px;
+}
 
 .pie {
     margin: 10px auto;
@@ -85,7 +89,6 @@ path:hover {
 }
 
 .pie>div {
-    float: left;
     position: relative;
     height: 100%;
 }
@@ -93,14 +96,17 @@ path:hover {
 /* LIST */
 
 .pie ul {
-    padding: 0;
     list-style:none;
     font-size: 18px;
     text-align: left;
     line-height: 1.5;
-    width: 60%;
-    padding: 210px 0 0 30px;
+    padding: 20px 0 0 50px;
+    width: 200px;
     margin: auto;
+}
+
+.pie ul > li {
+    width:100%;
 }
 
 span.dot {
