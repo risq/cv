@@ -42,29 +42,31 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Valentin Ledrapier</a>
+                <a class="navbar-brand" href="#home">Valentin Ledrapier</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse categories">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Accueil</a>
+                    <li class="active"><a href="#home">Accueil</a>
                     </li>
-                    <li><a href="#about">Expérience</a>
+<!--
+                    <li><a href="#experience">Expérience</a>
                     </li>
-                    <li><a href="#contact">Portfolio</a>
+                    <li><a href="#etudes">Etudes</a>
                     </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../navbar/">Default</a>
+-->
+                    <li><a href="#competences">Compétences</a>
                     </li>
-                    <li><a href="../navbar-static-top/">Static top</a>
+                    <li><a href="#main-portfolio">Portfolio</a>
                     </li>
-                    <li class="active"><a href="./">Fixed top</a>
+                    <li><a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
         </div>
     </div>
+
+    <div id="home"></div>
 
     <!-- MAIN IMAGE SECTION -->
     <section id="headerwrap">
@@ -84,22 +86,102 @@
     <!-- /headerwrap -->
 
     <!-- WELCOME SECTION -->
+<!--
     <section class="container">
         <div class="row mt">
-            <div class="col-xs-8">
+            <div class="col-xs-12">
                 <h1>Bienvenue sur mon CV en ligne.</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             </div>
-            <div class="col-lg-4">
-                <p class="pull-right">
-                    <br>
-                    <button type="button" class="btn btn-green">Start Your Project Now</button>
-                </p>
+        </div>
+    </section>
+-->
+    <!-- /.container -->
+
+    <section id="experience" class="container">
+        <div class="row mt">
+            <div class="col-xs-12">
+                <h1>Expérience professionnelle</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h4 class="bold-title exp-year">2013-2014</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            Contrat professionnel en alternance à l’<b>OMNT</b> (Observatoire des Micro et NanoTechnologies), unité mixte du <b>CEA</b> et du <b>CNRS</b>.
+                            <br/>Conception et réalisation de leur nouveau site web «<i>vitrine</i>», en PHP, dans le cadre de la licence professionnelle.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h4 class="bold-title exp-year">2013</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            Stage de fin de DUT de 10 semaines à <b>Atos Grenoble</b>.
+                            <br/>Portage d’une application de gestion du réseau de gaz en Thaïlande développée en C, JAVA, Shell et TCL de UNIX (Sun Solaris) vers Windows.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h4 class="bold-title exp-year">2012</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            Mission d'interim d'un mois à l'<b>EDF</b> (Lyon Part Dieu)
+                            <br/>Développement de scripts Visual Basic d’extraction de bases de données Excel et de mise à jour des informations de l’interface Web CISCO Unified Communication Manager.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- /row -->
     </section>
-    <!-- /.container -->
+
+    <section id="etudes" class="container">
+        <div class="row mt">
+            <div class="col-xs-12">
+                <h1>Etudes</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h4 class="bold-title exp-year">2013-2014</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            Licence Professionnelle SIL (Systèmes Informatiques et Logiciels) option MIAM (Métiers de l’Informatique et des Applications Multimédias) à l'IUT2 de Grenoble (Université Pierre Mendès France)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h4 class="bold-title exp-year">2011-2013</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            IUT d’Informatique à l'IUT2 de Grenoble (Université Pierre Mendès France)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h4 class="bold-title exp-year">2012</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            Optention du Baccalauréat S, option Sciences de l’Ingénieur (mention Bien) au Lycée du Grésivaudan, Meylan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="competences" class="container">
         <div class="row mt">
@@ -335,7 +417,7 @@
                                 <p class="portfolio-item-desc">
                                     L’OMNT (Observatoire des Micro et NanoTechnologies) est un organisme mixte du CNRS (Centre National de la Recherche Scientifique) et du CEA (Commissariat à l’Energie Atomique), de veille scientifique. La conception et la réalisation de leur nouveau site web est la mission de mon alternance lors de ma licence professionnelle (2013/2014).
                                     <br/>
-                                    <br/>Ce site est un site «vitrine» présentant les activités de l’organisme, leurs publications récentes et les experts associés à l’organisme. Il permet aussi de se renseigner sur les futurs événements proposés par l’OMNT et ses partenaires.
+                                    <br/>Ce site est un site «<i>vitrine</i>» présentant les activités de l’organisme, leurs publications récentes et les experts associés à l’organisme. Il permet aussi de se renseigner sur les futurs événements proposés par l’OMNT et ses partenaires.
 
                                 </p>
                                 <div class="portfolio-item-infos">
@@ -364,72 +446,26 @@
     </section>
     <!-- container -->
 
-    <!-- SERVICES SECTION -->
-    <section id="services">
-        <div class="container">
-            <div class="row mt">
-                <div class="col-lg-1 centered">
-                    <i class="fa fa-certificate"></i>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Quality Design</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </div>
-
-                <div class="col-lg-1 centered">
-                    <i class="fa fa-question-circle"></i>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Awesome Support</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </div>
-
-
-                <div class="col-lg-1 centered">
-                    <i class="fa fa-globe"></i>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Global Services</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </div>
-
-            </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
-    </section>
-    <!-- services section -->
-
-
     <!-- BLOG POSTS -->
+<!--
     <section class="container">
         <div class="row mt">
             <div class="col-lg-12">
-                <h1>Recent Posts</h1>
-            </div>
-            <!-- col-lg-12 -->
-            <div class="col-lg-8">
-                <p>Our latests thoughts about things that only matters to us.</p>
-            </div>
-            <!-- col-lg-8-->
-            <div class="col-lg-4 goright">
-                <p><a href="#"><i class="fa fa-angle-right"></i> See All Posts</a>
-                </p>
+                <h1>Autres projets</h1>
             </div>
         </div>
-        <!-- row -->
 
         <div class="row mt">
             <div class="col-lg-4">
-                <img class="img-responsive" src="assets/img/post01.jpg" alt="">
-                <h3><a href="#">Designing for the reader experience</a></h3>
+                <img class="img-responsive" src="assets/img/portfolio/eli.png" alt="">
+                <h3><a href="#">Elinoix</a></h3>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 <p><a href="#"><i class="fa fa-link"></i> Read More</a>
                 </p>
             </div>
             <div class="col-lg-4">
-                <img class="img-responsive" src="assets/img/post02.jpg" alt="">
-                <h3><a href="#">25 Examples of flat web & application design</a></h3>
+                <img class="img-responsive" src="assets/img/portfolio/yb.png" alt="">
+                <h3><a href="#">Yemi Bosia Photographie</a></h3>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 <p><a href="#"><i class="fa fa-link"></i> Read More</a>
                 </p>
@@ -442,47 +478,19 @@
                 </p>
             </div>
         </div>
-        <!-- row -->
     </section>
+-->
     <!-- container -->
-
-
-    <!-- CLIENTS LOGOS -->
-    <section id="lg">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <img src="assets/img/clients/c01.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="assets/img/clients/c02.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="assets/img/clients/c03.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="assets/img/clients/c04.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="assets/img/clients/c05.gif" alt="">
-                </div>
-            </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
-    </section>
-    <!-- dg -->
-
 
     <!-- CALL TO ACTION -->
     <section id="call">
         <div class="container">
             <div class="row">
-                <h3>THIS IS A CALL TO ACTION AREA</h3>
+                <h3>Découvrir mon dépôt Github</h3>
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <p>La plupart des codes sources des projets présentés, et beaucoup d'autres, sont accessibles sur mon dépôt Github.</p>
                     <p>
-                        <button type="button" class="btn btn-green btn-lg">Call To Action Button</button>
+                        <button type="button" class="btn btn-green btn-lg"><i class="fa fa-github"></i> Afficher le dépôt</button>
                     </p>
                 </div>
             </div>
@@ -492,49 +500,29 @@
     </section>
     <!-- Call to action -->
 
-    <section class="container">
-        <div class="row mt">
-            <div class="col-lg-12">
-                <h1>Stay Connected</h1>
-                <p>Join us on our social networks for all the latest updates, product/service announcements and more.</p>
-                <br>
-            </div>
-            <!-- col-lg-12 -->
-        </div>
-        <!-- row -->
-    </section>
-    <!-- container -->
 
 
-    <!-- SOCIAL FOOTER --->
-    <section id="contact"></section>
-    <section id="sf">
+
+    <!-- CLIENTS LOGOS -->
+    <section id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 dg">
-                    <h4 class="ml">FACEBOOK</h4>
-                    <p class="centered"><a href="#"><i class="fa fa-facebook"></i></a>
-                    </p>
-                    <p class="ml">> Become A Friend</p>
-                </div>
-                <div class="col-lg-4 lg">
-                    <h4 class="ml">TWITTER</h4>
-                    <p class="centered"><a href="#"><i class="fa fa-twitter"></i></a>
-                    </p>
-                    <p class="ml">> Follow Us</p>
-                </div>
-                <div class="col-lg-4 dg">
-                    <h4 class="ml">GOOGLE +</h4>
-                    <p class="centered"><a href="#"><i class="fa fa-google-plus"></i></a>
-                    </p>
-                    <p class="ml">> Add Us To Your Circle</p>
+            <div class="row centered">
+                <div class="col-lg-12">
+                    <h1>CONTACT</h1>
                 </div>
             </div>
             <!-- row -->
         </div>
         <!-- container -->
     </section>
-    <!-- Social Footer -->
+    <!-- dg -->
+
+
+
+
+
+
+
 
     <!-- CONTACT FOOTER --->
     <section id="cf">
