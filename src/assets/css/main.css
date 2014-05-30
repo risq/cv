@@ -524,6 +524,7 @@ hr {
 }
 .navbar-brand {
     text-transform: uppercase;
+    font-size: 14px;
 }
 .exp-year {
     text-align: right;

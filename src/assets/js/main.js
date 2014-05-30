@@ -18,8 +18,8 @@
     if($('#main-portfolio')) {
         console.log('doscroll');
         new AnimOnScroll( document.getElementById( 'main-portfolio-list' ), {
-            minDuration : 0.4,
-            maxDuration : 0.7,
+            minDuration : 0.2,
+            maxDuration : 0.5,
             viewportFactor : 0.2
         });
     }
