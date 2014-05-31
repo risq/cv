@@ -35,6 +35,9 @@ body {
         top: 0;
     }
 }
+.navbar-default .navbar-text, .navbar-default .navbar-nav>li>a {
+    text-transform: uppercase;
+}
 h1,
 h2,
 h3,
